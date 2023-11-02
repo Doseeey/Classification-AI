@@ -191,6 +191,9 @@ for i in range(28):
     for j in range(28):
         data[i][j] = image[i][j].mean()
 
+plt.imshow(data)
+plt.show()
+
 x2 = np.argmax(sigmoid(data.reshape(1, -1).dot(l1)).dot(l2), axis=1)
 print('Test results:')
 print(sigmoid(data.reshape(1, -1).dot(l1)).dot(l2))
