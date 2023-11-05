@@ -153,9 +153,15 @@ for i in range(epochs):
 
 #Validation accuracy
 plt.ylim(-0.1, 1.1)
+plt.ylabel("Accuracy")
+plt.xlabel("Epoch")
+plt.title("Model accuracy")
 plt.plot(accuracies)
 plt.show()
 
+plt.title("Model validation accuracy")
+plt.ylabel("Validation iteration")
+plt.xlabel("Accuracy")
 plt.plot(val_accuracies)
 plt.show()
 
